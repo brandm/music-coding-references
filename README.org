@@ -74,9 +74,14 @@
         - http://github.com/mhowlett/music-compojure/tree/master/examples
         - No Overtone.
 * File config :ARCHIVE:noexport:
+  For any possibly not so perfect exporter with an issue like
+  http://github.com/wallyqs/org-ruby/issues/26
+  #+EXCLUDE_TAGS: noexport
+  Support the old name too.
+  #+EXPORT_EXCLUDE_TAGS: noexport
   #+STARTUP: odd hidestars hidestarsfile
   #+TODO: TODO(t) BUSY(b) | READ(r) CNCL(c) KEEP(k) DONE(d)
-  # Local Variables:
-  #   coding: us-ascii-unix
-  #   fill-column: 76
-  # End:
+  : Local Variables:
+  :   coding: us-ascii-unix
+  :   fill-column: 76
+  : End:
