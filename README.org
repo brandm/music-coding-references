@@ -3,23 +3,23 @@
     Clojure Overtone and Clojure Leipzig, my favorite tools to program and
     understand music.
 * Overtone/Leipzig material to be explored
-  * Sam Aaron git repo *Overtone*
+*** Sam Aaron git repo *Overtone*
     - http://overtone.github.io
-    * KEEP "Quick Intro to Live Programming with Overtone"
+***** KEEP "Quick Intro to Live Programming with Overtone"
       - http://github.com/overtone/overtone/blob/master/src/overtone/examples/getting_started/video.clj
       - http://vimeo.com/22798433
-    * TODO M.A.D/MAD (Music as Data)
+***** TODO M.A.D/MAD (Music as Data)
       - http://github.com/overtone/overtone/blob/master/src/overtone/examples/notation/mad.clj
       - http://github.com/overtone/overtone/blob/master/src/overtone/examples/notation/mad2.clj
-    * TODO Samples
+***** TODO Samples
       - http://github.com/overtone/overtone/blob/master/src/overtone/examples/synthesis/samples.clj
-    * TODO Instrument B3 organ
+***** TODO Instrument B3 organ
       - http://github.com/overtone/overtone/blob/master/src/overtone/inst/synth.clj
       - See ~(definst b3~.
-    * TODO More
-  * Chris Ford git repo *Leipzig*
+***** TODO More
+*** Chris Ford git repo *Leipzig*
     - http://github.com/ctford/leipzig
-    * BUSY Section "Get Started"
+***** BUSY Section "Get Started"
       - http://github.com/ctford/leipzig/blob/master/README.md
       - For the Leiningen project the suggestion is to use the git repo
         "Leipzig Template".
@@ -29,48 +29,48 @@
           (require '[leipzig.melody :refer
                      [tempo all bpm is phrase then times where with]])
         #+END_SRC
-    * TODO Row row row your boat
+***** TODO Row row row your boat
       - http://github.com/ctford/leipzig/blob/master/src/clj/leipzig/example/row_row_row_your_boat.clj
-  * Chris Ford git repo *Leipzig Template*
+*** Chris Ford git repo *Leipzig Template*
     - http://github.com/ctford/leipzig-template
-    * TODO Arrangment example
+***** TODO Arrangment example
       - http://github.com/ctford/leipzig-template/blob/master/src/leiningen/new/leipzig/song.clj
-  * Chris Ford git repo *Leipzig from scratch*
+*** Chris Ford git repo *Leipzig from scratch*
     - http://github.com/ctford/leipzig-from-scratch
-    * KEEP Talk "A demonstration of using Leipzig to build a simple track"
+***** KEEP Talk "A demonstration of using Leipzig to build a simple track"
       - http://www.youtube.com/watch?v=Lp_kQh34EWA
         - Cool is the square wave multiplication introduced at 26m02s to
           tremolo the organ.
-    * TODO More
-  * Chris Ford git repo *Functional composition*
+***** TODO More
+*** Chris Ford git repo *Functional composition*
     - http://github.com/ctford/functional-composition
-    * TODO More
-  * Chris Ford git repo *Goldberg*
+***** TODO More
+*** Chris Ford git repo *Goldberg*
     - http://github.com/ctford/goldberg
-    * TODO More
-  * Chris Ford git repo *Whelmed*
+***** TODO More
+*** Chris Ford git repo *Whelmed*
     - "Some music by @ctford, available on SoundCloud"
     - http://github.com/ctford/whelmed
-    * TODO More
-  * Chris Ford git repo *Overtones*
+***** TODO More
+*** Chris Ford git repo *Overtones*
     - http://github.com/ctford/overtunes
-    * TODO More
-  * Chris Ford git repo *Kraftwerk*
+***** TODO More
+*** Chris Ford git repo *Kraftwerk*
     - http://github.com/ctford/kraftwerk
-    * TODO More
-  * Chris Ford git repo *Klangmeister*
+***** TODO More
+*** Chris Ford git repo *Klangmeister*
     - http://ctford.github.io/klangmeister
-    * TODO More
-  * Piotr Jagielski blog *Overtone Recipes*
+***** TODO More
+*** Piotr Jagielski blog *Overtone Recipes*
     - http://overtone-recipes.github.io
-    * TODO [2016-04-03 Sun] "Recreating Daft Punk's Da Funk"
+***** TODO [2016-04-03 Sun] "Recreating Daft Punk's Da Funk"
       - http://overtone-recipes.github.io/remake/2016/04/03/recreating-da-funk.html
-    * TODO [2016-04-25 Mon] "Smack My Lazer"
+***** TODO [2016-04-25 Mon] "Smack My Lazer"
       - http://overtone-recipes.github.io/live-coding/remake/2016/04/25/smack-my-lazer.html
-  * Adam Blinkinsop git repo *Oberon*
-    * TODO More
-  * Matt Howlett git repo *Music Compojure*
-    * TODO Examples dir
+*** Adam Blinkinsop git repo *Oberon*
+***** TODO More
+*** Matt Howlett git repo *Music Compojure*
+***** TODO Examples dir
         - http://github.com/mhowlett/music-compojure/tree/master/examples
         - No Overtone.
 * File config :ARCHIVE:noexport:
@@ -82,7 +82,7 @@ http://github.com/wallyqs/org-ruby/issues/26
 #+EXCLUDE_TAGS: noexport
 Support the old name too.
 #+EXPORT_EXCLUDE_TAGS: noexport
-#+STARTUP: odd hidestars hidestarsfile
+#+STARTUP: odd hidestars
 #+TODO: TODO(t) BUSY(b) | READ(r) CNCL(c) KEEP(k) DONE(d)
 
 : Local Variables:
