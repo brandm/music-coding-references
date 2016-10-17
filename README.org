@@ -1,78 +1,247 @@
 * Summary
-  - This is a collection of references to coded music, mostly coded in
-    Clojure Overtone and Clojure Leipzig, my favorite tools to program and
-    understand music.
-* Overtone/Leipzig material to be explored
-*** Sam Aaron git repo *Overtone*
-    - http://overtone.github.io
-***** KEEP "Quick Intro to Live Programming with Overtone"
-      - http://github.com/overtone/overtone/blob/master/src/overtone/examples/getting_started/video.clj
-      - http://vimeo.com/22798433
-***** TODO M.A.D/MAD (Music as Data)
-      - http://github.com/overtone/overtone/blob/master/src/overtone/examples/notation/mad.clj
-      - http://github.com/overtone/overtone/blob/master/src/overtone/examples/notation/mad2.clj
-***** TODO Samples
-      - http://github.com/overtone/overtone/blob/master/src/overtone/examples/synthesis/samples.clj
-***** TODO Instrument B3 organ
-      - http://github.com/overtone/overtone/blob/master/src/overtone/inst/synth.clj
-      - See ~(definst b3~.
-***** TODO More
-*** Chris Ford git repo *Leipzig*
-    - http://github.com/ctford/leipzig
-***** BUSY Section "Get Started"
-      - http://github.com/ctford/leipzig/blob/master/README.md
-      - For the Leiningen project the suggestion is to use the git repo
-        "Leipzig Template".
-      - In case of dependency problems when not using "Leipzig Template" try
-        with added ~tempo~ and ~all~:
+  - This is a collection of references to live code music.
+  - Each top level section after "Miscellaneous" is dedicated to one of the
+    tools used to live code music, there are many more than listed here.
+  - Often there are more songs than listed here for one person, always also
+    check the sites of the person who wrote a song.
+* Miscellaneous
+*** Live coding and "immediate connection"
+***** Bret Victor - Talk: Inventing on Principle :@:
+      - This talk is an absolute must!
+      - Video on YouTube: http://www.youtube.com/watch?v=PUv66718DII
+      - Video on Vimeo: http://vimeo.com/36579366
+      - Transcript:
+        - Blog with comments:
+          http://blog.ezyang.com/2012/02/transcript-of-inventing-on-principleb
+        - Source:
+          http://github.com/ezyang/cusec2012-victor/blob/master/transcript.md
+        - Excerpts:
+          - 04m48s: "[...] How would I ever have discovered that if I had to
+            compile and run between every change? So much of art, so much of
+            creation is discovery, and you can't discover anything if you
+            can't see what you're doing."
+          - 16m07s: "[...] But if we're writing our code on a computer...
+            why are we simulating what a computer would do in our head? Why
+            doesn't the computer just do it... and show us?"
+***** Live debugging in Python with live-py-plugin :@:
+      - Project page: http://github.com/donkirkby/live-py-plugin
+      - Video, version 2: http://www.youtube.com/watch?v=LV3aFRHlAEQ
+      - Video, version 1: http://www.youtube.com/watch?v=ZrbIVMdChDQ
+*** Hy (Lisp on Python)
+    - Don't miss this wonderful Lisp. Its source is translated to a Python
+      AST like any "normal" Python code and then takes the usual Python
+      path: The AST is compiled into byte code and executed like any
+      module.pyc.
+    - Try Hy interactively in a browser without the need to install
+      anything: http://try-hy.appspot.com
+    - Project page: http://hylang.org
+* Clojure: MAD (Music as Data)
+  - For coding with Clojure, written in Clojure.
+  - Project page: http://mad.emotionull.com
+* Clojure: Music Compojure
+  - For coding with Clojure, written in Clojure.
+  - Project page: http://github.com/mhowlett/music-compojure
+*** Examples
+***** Matt Howlett
+      - GitHub: http://github.com/mhowlett
+******* Matt Howlett - example_1
+        - Source:
+          http://github.com/mhowlett/music-compojure/blob/master/examples/example_1.clj
+******* Matt Howlett - example_2
+        - Source:
+          http://github.com/mhowlett/music-compojure/blob/master/examples/example_2.clj
+******* Matt Howlett - example_3
+        - Source:
+          http://github.com/mhowlett/music-compojure/blob/master/examples/example_3.clj
+******* Matt Howlett - example_4
+        - Source:
+          http://github.com/mhowlett/music-compojure/blob/master/examples/example_4.clj
+* Clojure: Overtone, without or with Leipzig/Oberon
+  - For coding with Clojure, written in Clojure.
+  - Project page of Overtone: http://overtone.github.io
+  - Project page of Leipzig: http://github.com/ctford/leipzig
+  - Project page of Oberon: http://github.com/blinks/oberon
+*** Overtone details :@:
+    - Defines scales with incremental intervals.
+    - Podcast with Sam Aaron:
+      http://twit.tv/shows/floss-weekly/episodes/197
+    - Meetup with Sam Aaron, see link to audio file:
+      http://www.meetup.com/de-DE/zh-clj-Zurich-Clojure-User-Group/events/108855442
+    - MIDI: http://github.com/overtone/overtone/wiki/MIDI
+    - Play samples:
+      http://github.com/overtone/overtone/blob/master/src/overtone/examples/synthesis/samples.clj
+    - Instrument B3 organ (see ~definst b3~):
+      http://github.com/overtone/overtone/blob/master/src/overtone/inst/synth.clj
+    - "Once you've caught the bug, check out Sonic Pi's big brother:
+      Overtone." -- Sam Aaron in
+      http://www.raspberrypi.org/blog/sonic-pi-free-music-and-computing-resource/#comment-266194
+*** Leipzig details
+    - Leipzig get started:
+      http://github.com/ctford/leipzig/blob/master/README.md#get-started
+      - For Leiningen the suggestion is to use the Leipzig Template:
+        http://github.com/ctford/leipzig-template
+      - In case of dependency problems when not using the Leipzig Template
+        try with ~tempo~ and ~all~ added:
         #+BEGIN_SRC clojure :results silent
           (require '[leipzig.melody :refer
                      [tempo all bpm is phrase then times where with]])
         #+END_SRC
-***** TODO Row row row your boat
-      - http://github.com/ctford/leipzig/blob/master/src/clj/leipzig/example/row_row_row_your_boat.clj
-*** Chris Ford git repo *Leipzig Template*
-    - http://github.com/ctford/leipzig-template
-***** TODO Arrangment example
-      - http://github.com/ctford/leipzig-template/blob/master/src/leiningen/new/leipzig/song.clj
-*** Chris Ford git repo *Leipzig from scratch*
-    - http://github.com/ctford/leipzig-from-scratch
-***** KEEP Talk "A demonstration of using Leipzig to build a simple track"
-      - http://www.youtube.com/watch?v=Lp_kQh34EWA
-        - Cool is the square wave multiplication introduced at 26m02s to
-          tremolo the organ.
-***** TODO More
-*** Chris Ford git repo *Functional composition*
-    - http://github.com/ctford/functional-composition
-***** TODO More
-*** Chris Ford git repo *Goldberg*
-    - http://github.com/ctford/goldberg
-***** TODO More
-*** Chris Ford git repo *Whelmed*
-    - "Some music by @ctford, available on SoundCloud"
-    - http://github.com/ctford/whelmed
-***** TODO More
-*** Chris Ford git repo *Overtones*
-    - http://github.com/ctford/overtunes
-***** TODO More
-*** Chris Ford git repo *Kraftwerk*
-    - http://github.com/ctford/kraftwerk
-***** TODO More
-*** Chris Ford git repo *Klangmeister*
-    - http://ctford.github.io/klangmeister
-***** TODO More
-*** Piotr Jagielski blog *Overtone Recipes*
-    - http://overtone-recipes.github.io
-***** TODO [2016-04-03 Sun] "Recreating Daft Punk's Da Funk"
-      - http://overtone-recipes.github.io/remake/2016/04/03/recreating-da-funk.html
-***** TODO [2016-04-25 Mon] "Smack My Lazer"
-      - http://overtone-recipes.github.io/live-coding/remake/2016/04/25/smack-my-lazer.html
-*** Adam Blinkinsop git repo *Oberon*
-***** TODO More
-*** Matt Howlett git repo *Music Compojure*
-***** TODO Examples dir
-        - http://github.com/mhowlett/music-compojure/tree/master/examples
-        - No Overtone.
+*** Examples
+***** Adam Blinkinsop
+      - GitHub: http://github.com/blinks
+      - SoundCloud: http://soundcloud.com/hackerblinks
+******* Adam Blinkinsop - Oberon Opus 1
+        - Audio: http://soundcloud.com/hackerblinks/oberon-opus-1
+******* Adam Blinkinsop - Oberon Opus 2
+        - Audio: http://soundcloud.com/hackerblinks/oberon-opus-2
+***** Chris Ford
+      - Blog: http://literateprogrammer.blogspot.ch
+      - GitHub: http://github.com/ctford
+      - SoundCloud: http://soundcloud.com/ctford
+******* Chris Ford - Goldberg Variations
+        - Source: http://github.com/ctford/goldberg
+******* Chris Ford - Kraftwerk
+        - Source: http://github.com/ctford/kraftwerk
+******* Chris Ford - Overtunes
+        - Source: http://github.com/ctford/overtunes
+******* Chris Ford - Row Row Row Your Boat
+        - Source:
+          http://github.com/ctford/leipzig/blob/master/src/clj/leipzig/example/row_row_row_your_boat.clj
+******* Chris Ford - Song
+        - Source:
+          http://github.com/ctford/leipzig-template/blob/master/src/leiningen/new/leipzig/song.clj
+******* Chris Ford - Talk: Functional Composition :@:
+        - Video of [2015-05-11 Mon]: http://vimeo.com/128467879
+        - Video of [2013-08-27 Tue] (the later video of [2015-05-11 Mon]
+          has better readable slides and is overall better but the graph
+          at 24m35s is missing there):
+          http://www.infoq.com/presentations/music-functional-language
+        - Source: http://github.com/ctford/functional-composition
+******* Chris Ford - Talk: Kolmogorov music :@:
+        - Video: http://www.youtube.com/watch?v=Qg3XOfioapI
+******* Chris Ford - Talk: Leipzig from Scratch :@:
+        - Video: http://www.youtube.com/watch?v=Lp_kQh34EWA
+        - Source: http://github.com/ctford/leipzig-from-scratch
+******* Chris Ford - Whelmed :@:
+        - Audio: http://soundcloud.com/ctford/whelmed
+        - Source: http://github.com/ctford/whelmed
+***** Piotr Jagielski
+      - Blog "Overtone Recipes": http://overtone-recipes.github.io
+      - GitHub: http://github.com/pjagielski
+******* Piotr Jagielski - Functional Coldplay
+        - Source and sound snippets:
+          http://overtone-recipes.github.io/remake/2016/09/01/functional-coldplay-saws.html
+******* Piotr Jagielski - Recreating Daft Punk's Da Funk
+        - Source and sound snippets:
+          http://overtone-recipes.github.io/remake/2016/04/03/recreating-da-funk.html
+******* Piotr Jagielski - Smack My Lazer
+        - Video: http://www.youtube.com/watch?v=JUq-YnuFt8w
+        - Source and sound snippets:
+          http://overtone-recipes.github.io/live-coding/remake/2016/04/25/smack-my-lazer.html
+***** Sam Aaron
+      - Personal page: http://sam.aaron.name
+      - GitHub: http://github.com/samaaron
+******* Sam Aaron - MAD
+        - Adapted from MAD project.
+        - Source:
+          http://github.com/overtone/overtone/blob/master/src/overtone/examples/notation/mad.clj
+******* Sam Aaron - MAD2
+        - Adapted from MAD project.
+        - Source:
+          http://github.com/overtone/overtone/blob/master/src/overtone/examples/notation/mad2.clj
+******* Sam Aaron - Talk: Quick Intro to Overtone :@:
+        - Video: http://vimeo.com/22798433
+        - Source:
+          http://github.com/overtone/overtone/blob/master/src/overtone/examples/getting_started/video.clj
+* Clojurescript: Klangmeister
+  - For coding with Clojurescript, written in Clojurescript.
+  - Project page: http://ctford.github.io/klangmeister
+* Haskell: Tidal
+  - For coding with a Haskell DSL.
+  - Project page: http://slab.org/tidal
+*** Details
+    - Toplap: http://toplap.org/tidal
+    - Guide: http://github.com/yaxu/tidal-guide
+* Python or Hy: FoxDot
+  - For coding with Python or Hy, written in Python.
+  - Project page: http://github.com/Qirky/FoxDot
+*** Details
+    - Defines scales with absolute intervals which seems to be unusual but
+      advantageous for microtuned scales.
+    - Suspected to be limited to Python 2.
+    - It has a nice notation for drum patterns with repeating variations:
+      http://github.com/Qirky/FoxDot#sample-player-objects
+    - Toplap:
+      http://toplap.org/foxdot-live-coding-with-python-and-supercollider
+*** Examples
+***** Ryan Kirkbride
+      - GitHub: http://github.com/Qirky
+      - YouTube: http://www.youtube.com/channel/UCoFrvfpBHPMvXi9kWsZyGCQ
+******* Ryan Kirkbride - Gooey
+        - Video: http://www.youtube.com/watch?v=GETf4tyjrZQ
+        - Drum patterns: http://www.youtube.com/watch?v=GETf4tyjrZQ&t=2m15s
+* Python or Hy: Blender live coding
+  - Not music, but at least live coding.
+  - For coding with Python or Hy, written in Hy.
+  - Project page: http://github.com/kilon/blender-hylang-live-code
+*** Details
+    - Video: http://www.youtube.com/watch?v=vRBdqsaKmuU
+* Python or Hy: Hyasynth
+  - For coding with Python or Hy, written in Python.
+  - Project page: http://github.com/oubiwann/hyasynth
+* Python or Hy: muse
+  - For coding with Python or Hy, written in Python.
+  - Project page: http://github.com/paultag/python-muse
+*** Examples
+***** Paul Tagliamonte
+      - Personal page: http://pault.ag
+      - GitHub: http://github.com/paultag
+******* Paul Tagliamonte - lysergide
+        - Source: http://github.com/paultag/lysergide
+        - Some drum pattern:
+          http://github.com/paultag/lysergide/blob/master/eg/drum.hy
+* Python or Hy: python-sonic
+  - For coding with Python or Hy, written in Python.
+  - Project page: http://pypi.python.org/pypi/python-sonic
+*** Details
+    - Defines scales with incremental intervals.
+    - Using python-sonic is expected to leave the path open to to run the
+      coded music on the Raspberry Pi.
+    - GitHub: http://github.com/gkvoelkl/python-sonic/blob/master/psonic.py
+* Ruby: Sonic Pi
+  - For coding with Ruby written in Ruby, Clojure, C++, and Qt. On the
+    desktop computer or Raspberry Pi.
+  - Project page: http://sonic-pi.net
+*** Details
+    - Wikipedia: http://en.wikipedia.org/wiki/Sonic_Pi
+    - http://www.sonicpiliveandcoding.com
+*** Examples
+***** Sébastien Rannou aka mxs
+      - Personal page: http://aimxhaisse.com
+      - GitHub: http://github.com/aimxhaisse
+******* Sébastien Rannou - Daft Punk, Aerodynamic :@:
+        - Video: http://www.youtube.com/watch?v=cydH_JAgSfg
+        - About: http://aimxhaisse.com/aerodynamic-en.html
+        - Very profound instructions:
+          http://aimxhaisse.com/aerodynamic-makeup-en.html
+* Scheme: Extempore (successor of Impromptu)
+  - For coding in Scheme, written in Scheme and C.
+  - Project page: http://extempore.moso.com.au
+*** Examples
+***** Andrew Sorensen
+      - GitHub: http://github.com/digego
+******* Andrew Sorensen - A Study in Keith
+        - Two pianos, a study in Keith Jarrett.
+        - Video (no sound until 1m53s): http://vimeo.com/2433947
+        - Referenced on: http://en.wikipedia.org/wiki/Live_coding
+******* Andrew Sorensen - Talk: Guide To Western Music :@:
+        - A guide to history of western music.
+        - Video: http://www.youtube.com/watch?v=xpSYWd_aIiI
+***** Ben Swift
+      - Personal page: http://benswift.me
+      - Vimeo: http://vimeo.com/benswift
+******* Ben Swift - Another Late Christmas
+        - Vimeo: http://vimeo.com/86664303
 * File config :ARCHIVE:noexport:
 
 Do not indent "#+" for compatibility with any exporter.
@@ -83,9 +252,8 @@ http://github.com/wallyqs/org-ruby/issues/26
 Support the old name too.
 #+EXPORT_EXCLUDE_TAGS: noexport
 #+STARTUP: odd hidestars
-#+TODO: TODO(t) BUSY(b) | READ(r) CNCL(c) KEEP(k) DONE(d)
 
 : Local Variables:
-:   coding: us-ascii-unix
+:   coding: utf-8-unix
 :   fill-column: 76
 : End:
