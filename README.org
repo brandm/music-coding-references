@@ -1,7 +1,7 @@
 * Summary
-  - This is a collection of references to live code music.
+  - This is a collection of references to live coding music etc.
   - Each top level section after "Miscellaneous" is dedicated to one of the
-    tools used to live code music, there are many more than listed here.
+    tools used to live coding music, there are many more than listed here.
   - Often there are more songs than listed here for one person, always also
     check the sites of the person who wrote a song.
 * Miscellaneous
@@ -9,7 +9,9 @@
 ***** Bret Victor - Talk: Inventing on Principle :@:
       - This talk is an absolute must!
       - Video on YouTube: http://www.youtube.com/watch?v=PUv66718DII
-      - Video on Vimeo: http://vimeo.com/36579366
+      - Same video on Vimeo: http://vimeo.com/36579366
+      - Nice example of an interactive web site
+        - http://worrydream.com/Tangle
       - Transcript:
         - Blog with comments:
           http://blog.ezyang.com/2012/02/transcript-of-inventing-on-principleb
@@ -23,14 +25,29 @@
           - 16m07s: "[...] But if we're writing our code on a computer...
             why are we simulating what a computer would do in our head? Why
             doesn't the computer just do it... and show us?"
-***** Live debugging in Python with live-py-plugin :@:
+***** Colt Adobe Flash Live Coding Tool
+      - Video: http://www.youtube.com/watch?v=GsK_syADzQ8
+***** IBNIZ: Live coding bare metal demoscene demo
+      - Project page http://pelulamu.net/ibniz/
+      - Video (warning: turn the volume down):
+        http://www.youtube.com/watch?v=aKMrBaXJvMs
+***** KLIPSE: Live debugging for several languages
+      - Project page: http://github.com/viebel/klipse
+      - Clojurescript example:
+        [[http://app.klipse.tech/?cljs_in=(let%20%5Bn%2040%5D%20(println%20(+%20n%202)))]]
+***** LIVEditor: Live coding a website
+      - Project page: http://liveditor.com/index.php
+      - Video: http://www.youtube.com/watch?v=Cy8OIzr6azw
+***** live-py-plugin: Python live coding turtle, live debugging :@:
       - Project page: http://github.com/donkirkby/live-py-plugin
       - Video, version 2: http://www.youtube.com/watch?v=LV3aFRHlAEQ
       - Video, version 1: http://www.youtube.com/watch?v=ZrbIVMdChDQ
+***** Tributary.io: Live coding JavaScript
+      - Project page: http://tributary.io
 *** Hy (Lisp on Python)
-    - Don't miss this wonderful Lisp. Its source is translated to a Python
+    - Don't miss this wonderful Lisp. Its source is translated to the Python
       AST like any "normal" Python code and then takes the usual Python
-      path: The AST is compiled into byte code and executed like any
+      path: The Python AST is compiled into byte code and executed like any
       module.pyc.
     - Try Hy interactively in a browser without the need to install
       anything: http://try-hy.appspot.com
@@ -241,7 +258,7 @@
       - Personal page: http://benswift.me
       - Vimeo: http://vimeo.com/benswift
 ******* Ben Swift - Another Late Christmas
-        - Vimeo: http://vimeo.com/86664303
+        - Video: http://vimeo.com/86664303
 * File config :ARCHIVE:noexport:
 
 Do not indent "#+" for compatibility with any exporter.
