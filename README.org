@@ -10,8 +10,7 @@
       - This talk is an absolute must!
       - Video on YouTube: http://www.youtube.com/watch?v=PUv66718DII
       - Same video on Vimeo: http://vimeo.com/36579366
-      - Nice example of an interactive web site
-        - http://worrydream.com/Tangle
+      - Nice example of an interactive website: http://worrydream.com/Tangle
       - Transcript:
         - Blog with comments:
           http://blog.ezyang.com/2012/02/transcript-of-inventing-on-principleb
@@ -34,7 +33,7 @@
 ***** KLIPSE: Live debugging for several languages
       - Project page: http://github.com/viebel/klipse
       - Clojurescript example:
-        [[http://app.klipse.tech/?cljs_in=(let%20%5Bn%2040%5D%20(println%20(+%20n%202)))]]
+        [[http://app.klipse.tech/?cljs_in=(let%2520%5Bn%252040%5D%2520(println%2520(+%2520n%25202)))]]
 ***** LIVEditor: Live coding a website
       - Project page: http://liveditor.com/index.php
       - Video: http://www.youtube.com/watch?v=Cy8OIzr6azw
@@ -73,11 +72,26 @@
 ******* Matt Howlett - example_4
         - Source:
           http://github.com/mhowlett/music-compojure/blob/master/examples/example_4.clj
-* Clojure: Overtone, without or with Leipzig/Oberon
+* Clojure: Overtone, without or with Leipzig etc.
   - For coding with Clojure, written in Clojure.
-  - Project page of Overtone: http://overtone.github.io
+  - Project page of Disclojure UI:
+    http://github.com/pjagielski/disclojure-ui
   - Project page of Leipzig: http://github.com/ctford/leipzig
+  - Project page of Musical Universes of Discourse:
+    http://github.com/josephwilk/mud
   - Project page of Oberon: http://github.com/blinks/oberon
+  - Project page of Overtone: http://overtone.github.io
+*** Leipzig details
+    - Leipzig get started:
+      http://github.com/ctford/leipzig/blob/master/README.md#get-started
+      - For Leiningen the suggestion is to use the Leipzig Template:
+        http://github.com/ctford/leipzig-template
+      - In case of dependency problems when not using the Leipzig Template
+        try with ~tempo~ and ~all~ added:
+        #+BEGIN_SRC clojure :eval no
+          (require '[leipzig.melody :refer
+                     [tempo all bpm is phrase then times where with]])
+        #+END_SRC
 *** Overtone details :@:
     - Defines scales with incremental intervals.
     - Podcast with Sam Aaron:
@@ -92,17 +106,6 @@
     - "Once you've caught the bug, check out Sonic Pi's big brother:
       Overtone." -- Sam Aaron in
       http://www.raspberrypi.org/blog/sonic-pi-free-music-and-computing-resource/#comment-266194
-*** Leipzig details
-    - Leipzig get started:
-      http://github.com/ctford/leipzig/blob/master/README.md#get-started
-      - For Leiningen the suggestion is to use the Leipzig Template:
-        http://github.com/ctford/leipzig-template
-      - In case of dependency problems when not using the Leipzig Template
-        try with ~tempo~ and ~all~ added:
-        #+BEGIN_SRC clojure :results silent
-          (require '[leipzig.melody :refer
-                     [tempo all bpm is phrase then times where with]])
-        #+END_SRC
 *** Examples
 ***** Adam Blinkinsop
       - GitHub: http://github.com/blinks
