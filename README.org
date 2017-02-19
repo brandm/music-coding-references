@@ -26,6 +26,8 @@
             doesn't the computer just do it... and show us?"
 ***** Colt Adobe Flash Live Coding Tool
       - Video: http://www.youtube.com/watch?v=GsK_syADzQ8
+***** hydrogen: Partial live coding with any Jupyter kernel in Atom
+      - Project page: http://atom.io/packages/hydrogen
 ***** IBNIZ: Live coding bare metal demoscene demo
       - Project page http://pelulamu.net/ibniz/
       - Video (warning: turn the volume down):
@@ -33,14 +35,17 @@
 ***** KLIPSE: Live debugging for several languages
       - Project page: http://github.com/viebel/klipse
       - Clojurescript example:
-        [[http://app.klipse.tech/?cljs_in=(let%2520%5Bn%252040%5D%2520(println%2520(+%2520n%25202)))]]
+        [[http://app.klipse.tech/?cljs_in=(let%20%5Bn%2040%5D%20(println%20(+%20n%202)))]]
 ***** LIVEditor: Live coding a website
       - Project page: http://liveditor.com/index.php
       - Video: http://www.youtube.com/watch?v=Cy8OIzr6azw
-***** live-py-plugin: Python live coding turtle, live debugging :@:
-      - Project page: http://github.com/donkirkby/live-py-plugin
+***** live-py-plugin: Python live coding turtle, side by side live debugging :@:
+      - Project page: http://donkirkby.github.io/live-py-plugin
+      - Introduction:
+        http://donkirkby.github.io/live-py-plugin/gettingstarted
       - Video, version 2: http://www.youtube.com/watch?v=LV3aFRHlAEQ
       - Video, version 1: http://www.youtube.com/watch?v=ZrbIVMdChDQ
+      - Plugin for Eclipse, Emacs or PyCharm
 ***** Tributary.io: Live coding JavaScript
       - Project page: http://tributary.io
 *** Hy (Lisp on Python)
@@ -264,13 +269,14 @@
         - Video: http://vimeo.com/86664303
 * File config :ARCHIVE:noexport:
 
-Do not indent "#+" for compatibility with any exporter.
+# Do not indent "#+" for compatibility with any exporter.
 
-For any possibly not so perfect exporter with an issue like
-http://github.com/wallyqs/org-ruby/issues/26
+# For any possibly not so perfect exporter with an issue like
+# http://github.com/wallyqs/org-ruby/issues/26
 #+EXCLUDE_TAGS: noexport
-Support the old name too.
+# Support the old name too.
 #+EXPORT_EXCLUDE_TAGS: noexport
+
 #+STARTUP: odd hidestars
 
 : Local Variables:
