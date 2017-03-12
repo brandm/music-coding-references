@@ -26,20 +26,23 @@
             doesn't the computer just do it... and show us?"
 ***** Colt Adobe Flash Live Coding Tool
       - Video: http://www.youtube.com/watch?v=GsK_syADzQ8
+***** Event Notify Test Runner, entr(1): Notify an application upon file change
+      - Project page: http://entrproject.org
 ***** hydrogen: Partial live coding with any Jupyter kernel in Atom
       - Project page: http://atom.io/packages/hydrogen
 ***** IBNIZ: Live coding bare metal demoscene demo
       - Project page http://pelulamu.net/ibniz/
       - Video (warning: turn the volume down):
         http://www.youtube.com/watch?v=aKMrBaXJvMs
-***** KLIPSE: Live debugging for several languages
+***** KLIPSE: Live coding for several languages
       - Project page: http://github.com/viebel/klipse
       - Clojurescript example:
         [[http://app.klipse.tech/?cljs_in=(let%20%5Bn%2040%5D%20(println%20(+%20n%202)))]]
 ***** LIVEditor: Live coding a website
-      - Project page: http://liveditor.com/index.php
+      - Project page: http://liveditor.com
       - Video: http://www.youtube.com/watch?v=Cy8OIzr6azw
-***** live-py-plugin: Python live coding turtle, side by side live debugging :@:
+***** live-py-plugin: Python code tracer, Python live coding turtle :@:
+      - Shows a trace of every run of every source code line.
       - Project page: http://donkirkby.github.io/live-py-plugin
       - Introduction:
         http://donkirkby.github.io/live-py-plugin/gettingstarted
