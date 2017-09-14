@@ -1,3 +1,9 @@
+* File comment :noexport:
+
+- Copyright (C) 2016-2017 Michael Brand <michael.ch.brand at gmail.com>
+- Licensed under GPLv3, see http://www.gnu.org/licenses/gpl-3.0.html
+- URL: http://github.com/brandm/music-coding-references
+
 * Summary
   - This is a collection of references to live coding music etc.
   - Each top level section after "Miscellaneous" is dedicated to one of the
@@ -28,10 +34,12 @@
       - Video: http://www.youtube.com/watch?v=GsK_syADzQ8
 ***** Event Notify Test Runner, entr(1): Notify an application upon file change
       - Project page: http://entrproject.org
+***** Figwheel: Live coding ClojureScript :@:
+      - Project page: http://github.com/bhauman/lein-figwheel
 ***** hydrogen: Partial live coding with any Jupyter kernel in Atom
       - Project page: http://atom.io/packages/hydrogen
 ***** IBNIZ: Live coding bare metal demoscene demo
-      - Project page http://pelulamu.net/ibniz/
+      - Project page: http://pelulamu.net/ibniz
       - Video (warning: turn the volume down):
         http://www.youtube.com/watch?v=aKMrBaXJvMs
 ***** KLIPSE: Live coding for several languages
@@ -80,32 +88,21 @@
 ******* Matt Howlett - example_4
         - Source:
           http://github.com/mhowlett/music-compojure/blob/master/examples/example_4.clj
-* Clojure: Overtone, without or with Leipzig etc.
+* Clojure: Overtone
   - For coding with Clojure, written in Clojure.
-  - Project page of Disclojure UI:
-    http://github.com/pjagielski/disclojure-ui
-  - Project page of Leipzig: http://github.com/ctford/leipzig
-  - Project page of Musical Universes of Discourse:
-    http://github.com/josephwilk/mud
-  - Project page of Oberon: http://github.com/blinks/oberon
-  - Project page of Overtone: http://overtone.github.io
-*** Leipzig details
-    - Leipzig get started:
-      http://github.com/ctford/leipzig/blob/master/README.md#get-started
-      - For Leiningen the suggestion is to use the Leipzig Template:
-        http://github.com/ctford/leipzig-template
-      - In case of dependency problems when not using the Leipzig Template
-        try with ~tempo~ and ~all~ added:
-        #+BEGIN_SRC clojure :eval no
-          (require '[leipzig.melody :refer
-                     [tempo all bpm is phrase then times where with]])
-        #+END_SRC
-*** Overtone details :@:
+  - Project page: http://overtone.github.io
+*** Details
     - Defines scales with incremental intervals.
+    - Quick Intro to Overtone, Sam Aaron:
+      - Video: http://vimeo.com/22798433
+      - Source:
+        http://github.com/overtone/overtone/blob/master/src/overtone/examples/getting_started/video.clj
     - Podcast with Sam Aaron:
       http://twit.tv/shows/floss-weekly/episodes/197
-    - Meetup with Sam Aaron, see link to audio file:
+    - Meetup with Sam Aaron (see link to audio file):
       http://www.meetup.com/de-DE/zh-clj-Zurich-Clojure-User-Group/events/108855442
+    - Emacs Org and Overtone quick intro, Bastien Guerry:
+      http://github.com/bzg/org-overtone-intro
     - MIDI: http://github.com/overtone/overtone/wiki/MIDI
     - Play samples:
       http://github.com/overtone/overtone/blob/master/src/overtone/examples/synthesis/samples.clj
@@ -114,6 +111,25 @@
     - "Once you've caught the bug, check out Sonic Pi's big brother:
       Overtone." -- Sam Aaron in
       http://www.raspberrypi.org/blog/sonic-pi-free-music-and-computing-resource/#comment-266194
+*** Enhancements
+***** Leipzig
+      - Project page: http://github.com/ctford/leipzig
+      - Leipzig get started:
+        http://github.com/ctford/leipzig/blob/master/README.md#get-started
+        - For Leiningen the suggestion is to use the Leipzig Template:
+          http://github.com/ctford/leipzig-template
+        - In case of dependency problems when not using the Leipzig Template
+          try with ~tempo~ and ~all~ added:
+          #+BEGIN_SRC clojure :eval no
+            (require '[leipzig.melody :refer
+                       [tempo all bpm is phrase then times where with]])
+          #+END_SRC
+***** Disclojure UI
+      - Project page: http://github.com/pjagielski/disclojure-ui
+***** Musical Universes of Discourse
+      - Project page: http://github.com/josephwilk/mud
+***** Oberon
+      - Project page: http://github.com/blinks/oberon
 *** Examples
 ***** Adam Blinkinsop
       - GitHub: http://github.com/blinks
@@ -177,10 +193,6 @@
         - Adapted from MAD project.
         - Source:
           http://github.com/overtone/overtone/blob/master/src/overtone/examples/notation/mad2.clj
-******* Sam Aaron - Talk: Quick Intro to Overtone :@:
-        - Video: http://vimeo.com/22798433
-        - Source:
-          http://github.com/overtone/overtone/blob/master/src/overtone/examples/getting_started/video.clj
 * Clojurescript: Klangmeister
   - For coding with Clojurescript, written in Clojurescript.
   - Project page: http://ctford.github.io/klangmeister
@@ -211,7 +223,8 @@
 * Python or Hy: Blender live coding
   - Not music, but at least live coding.
   - For coding with Python or Hy, written in Hy.
-  - Project page: http://github.com/kilon/blender-hylang-live-code
+  - Project page:
+    http://mccormick.cx/news/entries/live-coding-blender-with-hy
 *** Details
     - Video: http://www.youtube.com/watch?v=vRBdqsaKmuU
 * Python or Hy: Hyasynth
