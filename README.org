@@ -1,6 +1,6 @@
 * File comment :noexport:
 
-- Copyright (C) 2016-2017 Michael Brand <michael.ch.brand at gmail.com>
+- Copyright (C) 2016-2018 Michael Brand <michael.ch.brand at gmail.com>
 - Licensed under GPLv3, see http://www.gnu.org/licenses/gpl-3.0.html
 - URL: http://github.com/brandm/music-coding-references
 
@@ -16,20 +16,22 @@
       - This talk is an absolute must!
       - Video on YouTube: http://www.youtube.com/watch?v=PUv66718DII
       - Same video on Vimeo: http://vimeo.com/36579366
-      - Nice example of an interactive website: http://worrydream.com/Tangle
-      - Transcript:
-        - Blog with comments:
+      - Excerpts
+        - 04m48s: "[...] How would I ever have discovered that if I had to
+          compile and run between every change? So much of art, so much of
+          creation is discovery, and you can't discover anything if you
+          can't see what you're doing."
+        - 16m07s: "[...] But if we're writing our code on a computer...
+          why are we simulating what a computer would do in our head? Why
+          doesn't the computer just do it... and show us?"
+      - Transcript
+        - Blog with reader comments:
           http://blog.ezyang.com/2012/02/transcript-of-inventing-on-principleb
         - Source:
           http://github.com/ezyang/cusec2012-victor/blob/master/transcript.md
-        - Excerpts:
-          - 04m48s: "[...] How would I ever have discovered that if I had to
-            compile and run between every change? So much of art, so much of
-            creation is discovery, and you can't discover anything if you
-            can't see what you're doing."
-          - 16m07s: "[...] But if we're writing our code on a computer...
-            why are we simulating what a computer would do in our head? Why
-            doesn't the computer just do it... and show us?"
+      - Nice example of an interactive website: http://worrydream.com/Tangle
+***** AREPL: Python code tracer
+      - Project page: http://github.com/Almenon/AREPL
 ***** Colt Adobe Flash Live Coding Tool
       - Video: http://www.youtube.com/watch?v=GsK_syADzQ8
 ***** Event Notify Test Runner, entr(1): Notify an application upon file change
@@ -42,6 +44,11 @@
       - Project page: http://pelulamu.net/ibniz
       - Video (warning: turn the volume down):
         http://www.youtube.com/watch?v=aKMrBaXJvMs
+***** Impatient mode: Live coding HTML in Emacs
+      - Project page: http://github.com/netguy204/imp.el
+***** JS Bin: Live coding HTML, CSS and JavaScript
+      - Project page: http://jsbin.com
+      - Example: http://jsbin.com/quhujowota/1/edit?html,js,output
 ***** KLIPSE: Live coding for several languages
       - Project page: http://github.com/viebel/klipse
       - Clojurescript example:
@@ -208,7 +215,6 @@
 *** Details
     - Defines scales with absolute intervals which seems to be unusual but
       advantageous for microtuned scales.
-    - Suspected to be limited to Python 2.
     - It has a nice notation for drum patterns with repeating variations:
       http://github.com/Qirky/FoxDot#sample-player-objects
     - Toplap:
@@ -262,9 +268,8 @@
       - GitHub: http://github.com/aimxhaisse
 ******* Sébastien Rannou - Daft Punk, Aerodynamic :@:
         - Video: http://www.youtube.com/watch?v=cydH_JAgSfg
-        - About: http://aimxhaisse.com/aerodynamic-en.html
-        - Very profound instructions:
-          http://aimxhaisse.com/aerodynamic-makeup-en.html
+        - About, with detailed instructions:
+          http://aimxhaisse.com/aerodynamic-en.html
 * Scheme: Extempore (successor of Impromptu)
   - For coding in Scheme, written in Scheme and C.
   - Project page: http://extempore.moso.com.au
@@ -272,7 +277,7 @@
 ***** Andrew Sorensen
       - GitHub: http://github.com/digego
 ******* Andrew Sorensen - A Study in Keith
-        - Two pianos, a study in Keith Jarrett.
+        - Solo piano, a study in Keith Jarrett.
         - Video (no sound until 1m53s): http://vimeo.com/2433947
         - Referenced on: http://en.wikipedia.org/wiki/Live_coding
 ******* Andrew Sorensen - Talk: Guide To Western Music :@:
@@ -283,7 +288,7 @@
       - Vimeo: http://vimeo.com/benswift
 ******* Ben Swift - Another Late Christmas
         - Video: http://vimeo.com/86664303
-* File config :ARCHIVE:noexport:
+* File config :noexport:
 
 # Do not indent "#+" for compatibility with any exporter.
 
@@ -293,7 +298,7 @@
 # Support the old name too.
 #+EXPORT_EXCLUDE_TAGS: noexport
 
-#+STARTUP: odd hidestars
+#+STARTUP: hidestars odd
 
 : Local Variables:
 :   coding: utf-8-unix
