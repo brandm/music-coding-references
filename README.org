@@ -61,8 +61,9 @@
       - Project page: http://donkirkby.github.io/live-py-plugin
       - Introduction:
         http://donkirkby.github.io/live-py-plugin/gettingstarted
-      - Video, version 2: http://www.youtube.com/watch?v=LV3aFRHlAEQ
-      - Video, version 1: http://www.youtube.com/watch?v=ZrbIVMdChDQ
+      - Video: https://www.youtube.com/watch?v=Vdr2l3yNFH4 (older versions:
+        https://www.youtube.com/watch?v=LV3aFRHlAEQ,
+        https://www.youtube.com/watch?v=ZrbIVMdChDQ)
       - Plugin for Eclipse, Emacs or PyCharm
 ***** Tributary.io: Live coding JavaScript
       - Project page: http://tributary.io
@@ -252,16 +253,15 @@
   - Project page: http://pypi.python.org/pypi/python-sonic
 *** Details
     - Defines scales with incremental intervals.
-    - Using python-sonic is expected to leave the path open to to run the
-      coded music on the Raspberry Pi.
-    - GitHub: http://github.com/gkvoelkl/python-sonic/blob/master/psonic.py
+    - Using python-sonic is expected to leave the path open to run the coded
+      music on the Raspberry Pi.
+    - GitHub: http://github.com/gkvoelkl/python-sonic
 * Ruby: Sonic Pi
   - For coding with Ruby written in Ruby, Clojure, C++, and Qt. On the
     desktop computer or Raspberry Pi.
   - Project page: http://sonic-pi.net
 *** Details
     - Wikipedia: http://en.wikipedia.org/wiki/Sonic_Pi
-    - http://www.sonicpiliveandcoding.com
 *** Examples
 ***** Sébastien Rannou aka mxs
       - Personal page: http://aimxhaisse.com
@@ -300,7 +300,7 @@
 
 #+STARTUP: hidestars odd
 
-: Local Variables:
-:   coding: utf-8-unix
-:   fill-column: 76
-: End:
+# Local Variables:
+#   coding: utf-8-unix
+#   fill-column: 76
+# End:
